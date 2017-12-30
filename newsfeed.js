@@ -1,11 +1,11 @@
 
-        var $main = $('.main');
+        var $newsfeed = $('.newsfeed');
 
 
         $(document).ready(function(){
 
           $feed = $('<div></div>')
-          $feed.appendTo($main);
+          $feed.appendTo($newsfeed);
 
           var showTweets = function(context){
             var toDisplay;
@@ -36,6 +36,8 @@
             $message.appendTo($tweet)
 
             var $hashtag = $('<a></a>')
+            $hashtag.addClass('hashtag')
+            $hashtag.text()
 
             var $timestamp = $('<a></a>')
             $timestamp.addClass('timestamp')
