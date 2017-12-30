@@ -37,12 +37,37 @@ var randomMessage = function(){
   return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ');
 };
 
+//converts date object into name of the month string
+var convertMonth = function(num){
+ var months = {
+   01: "Jan",
+   02: "Feb",
+   03: "Mar",
+   04: "April",
+   05: "May",
+   06: "June",
+   07: "July",
+   08: "Aug",
+   09: "Sept",
+   10: "Oct",
+   11: "Nov",
+   12: "Dec"
+ };
+ return months[num];
+};
+
 // generate random tweets on a random schedule
 var generateRandomTweet = function(){
   var tweet = {};
   tweet.user = randomElement(users);
   tweet.message = randomMessage();
   tweet.created_at = new Date();
+  tweet.fullDate = tweet.created_at.toISOString()
+  tweet.month = convertMonth(tweet.created_at.toISOString().split("-")[1]);
+  tweet.year = tweet.created_at.toISOString().split("-")[0];
+  tweet.day = tweet.created_at.toISOString().split("-")[2].slice(0,2);
+  tweet.time = tweet.created_at.toISOString().slice(11,16)
+  tweet.displayDate = tweet.month + " " + tweet.day + " at " + tweet.time
   addTweet(tweet);
 };
 
