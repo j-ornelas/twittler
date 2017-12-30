@@ -86,10 +86,15 @@ NEWSFEED
 */
 
 div {
-	margin-top: 2px;
+	width: 80%;
+	padding: 5px;
+	clear: left;
+	margin: auto;
 	border-radius: 5px;
 	opacity: .9;
 	background-color: white;
+	align-content: center;
+	
 }
 .tweet {
 	text-align: center;
@@ -105,6 +110,9 @@ div {
 .message {
 	color: rgb(66, 66, 66);
 }
+.hashtag {
+	color: red;
+}
 .timestamp {
 	font-size: 11px;
 	color: #828282;
@@ -117,19 +125,40 @@ FOOTER
 */
 
 .updateButton {
+	clear:right;
 	width: 180px;
 	height: 25px;
 	font-size: auto;
 	text-align: center;
 }
 
-footer {
+footer div{
 	border-style: solid;
 	border-color: black;
-	margin-top: 10px;
-	margin-bottom: 44px;
+    background: rgb(136,191,232);
+	margin-top: 20px;
 	clear: left;
 	text-align: center;
+	font-size: 11px;
 	color: white;
-	font-size: 14px;
+	opacity:.9;
+}
+
+.madeBy {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 550;
+	color: white;
+}
+.madeBy:hover {
+	color: red;
+}
+.madeFor {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 550;
+	color: white;
+}
+.madeFor:hover {
+	color:red;
 }
