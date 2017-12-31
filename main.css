@@ -78,9 +78,8 @@ SIDEBAR
 
 .sidebar{
 	float: left;
-	width: 25%;
-	padding-right: 5px;
-	margin: auto;
+	display: block;
+	width: 24%;
 	border-radius: 5px;
 	opacity: .88;
 	background-color: white;
@@ -88,6 +87,7 @@ SIDEBAR
 }
 .sidebar img {
 	margin-top: 10px;
+	margin-left: 5px;
 	border-radius: 5px;
     display: block;
     max-width: 100%;
@@ -98,10 +98,7 @@ SIDEBAR
 	clear:all;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	min-width: 10%;
-	max-width: 100%;
-	height: 25px;
-/*	font-size: auto;*/
+	height: 30px;
 	text-align: center;
     margin-left: 20%;
     margin-right: 20%
@@ -114,12 +111,10 @@ NEWSFEED
 */
 
 .newsfeed {
+	display: block;
 	clear: left;
 	float: right;
-	padding-left: 100px;
-	padding-right: 100px;
-	width: 66%;
-	padding: 5px;
+	width: 74%;
 	border-radius: 5px;
 	opacity: .88;
 	background-color: white;
