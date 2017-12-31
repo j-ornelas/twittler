@@ -108,6 +108,9 @@ NEWSFEED
 .hashtag {
 	color: red;
 }
+.hashtag:hover {
+	color:black;
+}
 .timestamp {
 	font-size: 11px;
 	color: #828282;
@@ -178,7 +181,7 @@ FOOTER
 	color: white;
 }
 .madeBy:hover {
-	color:rgb(255, 73, 53);
+	color:red;
 }
 .madeFor {
 	text-transform: uppercase;
@@ -188,5 +191,5 @@ FOOTER
 	color: white;
 }
 .madeFor:hover {
-	color:rgb(255, 73, 53);
+	color:red;
 }

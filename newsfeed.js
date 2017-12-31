@@ -11,10 +11,12 @@
             var toDisplay;
             if(context === 'home'){
               toDisplay = streams.home
+            } else if (streams.users[context] === undefined){
+              toDisplay = streams.tags[context]
             } else if (context){
               toDisplay = streams.users[context]
             }
-
+console.log(toDisplay)
           $feed.html('');
 
 
@@ -32,16 +34,17 @@
 
             var $message = $('<a></a>');
             $message.addClass('message')
-            $message.text(tweet.message)
+            $message.text(tweet.message + ' ')
             $message.appendTo($tweet)
 
             var $hashtag = $('<a></a>')
-            $hashtag.addClass('hashtag')
-            $hashtag.text()
+            $hashtag.attr({'href':'#', 'class': 'hashtag', 'data-tag': tweet.tag})
+            $hashtag.text(tweet.tag)
+            $hashtag.appendTo($tweet)
 
             var $timestamp = $('<a></a>')
             $timestamp.addClass('timestamp')
-            $timestamp.text(' ~ ' + tweet.displayDate)
+            $timestamp.text(' ~ ' + tweet.timeTest)
             $timestamp.appendTo($tweet)
 
             $tweet.appendTo($feed);
@@ -53,6 +56,11 @@
             page.preventDefault();
             showTweets($(this).data('user'));
           });
+
+          $('.hashtag').on('click', function(page){
+            page.preventDefault();
+            showTweets($(this).data('tag'));
+          })
 
           $('.updateButton').on('click', function(page){
             page.preventDefault();
