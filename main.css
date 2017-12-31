@@ -71,7 +71,43 @@ header {
 	font-size: 75px;
 	padding-top: 5px;
 	padding-bottom: 10px;
+}
+/*
+SIDEBAR
+*/
 
+.sidebar{
+	float: left;
+	width: 25%;
+	padding-right: 5px;
+	margin: auto;
+	border-radius: 5px;
+	opacity: .88;
+	background-color: white;
+	
+}
+.sidebar img {
+	margin-top: 10px;
+	border-radius: 5px;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    opacity: .9;
+}
+.updateButton {
+	clear:all;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-width: 10%;
+	max-width: 100%;
+	height: 25px;
+/*	font-size: auto;*/
+	text-align: center;
+    margin-left: 20%;
+    margin-right: 20%
+}
+.updateButton:hover {
+	color: rgb(255, 73, 53);
 }
 /*
 NEWSFEED
@@ -85,7 +121,7 @@ NEWSFEED
 	width: 66%;
 	padding: 5px;
 	border-radius: 5px;
-	opacity: .9;
+	opacity: .88;
 	background-color: white;
 	text-align: left;
 	
@@ -122,43 +158,6 @@ NEWSFEED
 	color: #828282;
 	text-align: right;
 }
-
-/*
-SIDEBAR
-*/
-
-.sidebar{
-	float: left;
-	width: 25%;
-	padding-right: 5px;
-	margin: auto;
-	border-radius: 5px;
-	opacity: .9;
-	background-color: white;
-	
-}
-.sidebar img {
-	margin-top: 10px;
-	border-radius: 5px;
-    display: block;
-    max-width: 100%;
-    margin: auto;
-}
-.updateButton {
-	clear:all;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	min-width: 50%;
-	max-width: 100%;
-	height: 25px;
-	font-size: auto;
-	text-align: center;
-}
-.updateButton:hover {
-	color: rgb(255, 73, 53);
-}
-
-
 /*
 FOOTER
 */
