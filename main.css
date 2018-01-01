@@ -65,12 +65,41 @@ header {
 
 
 .logo {
-	text-shadow: black 2px 2px 55px;
-	color: white;
-	text-align: center;
-	font-size: 75px;
+	text-shadow: #e5e5e5 2px 2px 55px;
+	color: yellow;
+	text-align: left;
+	font-size: 85px;
 	padding-top: 5px;
 	padding-bottom: 10px;
+}
+
+.logo1 {
+	font-size: 90px;
+	color:yellow;
+}
+.logo2 {
+	font-size: 86px;
+	color: yellow;
+}
+.logo3 {
+	font-size: 82px;
+	color: yellow;
+}
+.logo4 {
+	font-size: 78px;
+	color: yellow;
+}
+.logo5 {
+	font-size: 74px;
+	color: yellow;
+}
+.logo6 {
+	font-size: 70px;
+	color: yellow;
+}
+.logo7 {
+	font-size: 66px;
+	color: yellow;
 }
 /*
 SIDEBAR
@@ -93,7 +122,6 @@ SIDEBAR
     opacity: .9;
 }
 .updateButton {
-	clear:all;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	height: 30px;
@@ -168,7 +196,7 @@ FOOTER
 	text-align: center;
 	font-size: 11px;
 	color: white;
-	opacity:.9;
+	opacity:.8;
 }
 
 .madeBy {
