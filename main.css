@@ -131,6 +131,7 @@ SIDEBAR
 }
 .updateButton:hover {
 	color: rgb(255, 73, 53);
+	cursor: pointer;
 }
 /*
 NEWSFEED
