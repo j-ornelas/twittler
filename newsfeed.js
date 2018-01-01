@@ -242,7 +242,8 @@
             $hashtag.text(tweet.tag)
             $hashtag.appendTo($tweet)
 
-            var $timestamp = $('<a></a>')
+            var $timestamp = $('<span></span>')
+            $timestamp.attr({'class': 'timestamp', 'title': tweet.timeTest})
             $timestamp.addClass('timestamp')
             $timestamp.text(' ~ ' + $.timeago(tweet.created_at))
             $timestamp.appendTo($tweet)
