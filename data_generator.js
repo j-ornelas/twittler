@@ -83,6 +83,7 @@ var generateRandomTweet = function(){
     day: "numeric", hour: "2-digit", minute: "2-digit"  
   };  
   tweet.timeTest = tweet.created_at.toLocaleTimeString("en-US", options)
+  
   addTweet(tweet);
 };
 
@@ -92,7 +93,7 @@ for(var i = 0; i < 10; i++){
 
 var scheduleNextTweet = function(){
   generateRandomTweet();
-  setTimeout(scheduleNextTweet, Math.random() * 10500);
+  setTimeout(scheduleNextTweet, Math.random() * 5500);
 };
 scheduleNextTweet();
 
